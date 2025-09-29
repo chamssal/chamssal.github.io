@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>민아 | 개인 홈페이지</title>
+  <meta name="description" content="연구실 개인 홈페이지 샘플" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --fg: #0f172a; --muted:#475569; --bg:#ffffff; --card:#f8fafc; --accent:#3b82f6; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;color:var(--fg);background:var(--bg)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{max-width:980px;margin:0 auto;padding:32px 20px 0}
+    .hero{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center;padding:20px;background:var(--card);border-radius:20px}
+    .photo{width:140px;height:140px;border-radius:16px;object-fit:cover;border:1px solid #e2e8f0}
+    h1{font-size:28px;margin:0 0 6px}
+    .role{color:var(--muted);font-weight:500;margin:0}
+    nav{display:flex;gap:16px;margin-top:12px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border:1px solid #e2e8f0;border-radius:999px}
+    main{max-width:980px;margin:0 auto;padding:24px 20px 64px;display:grid;gap:24px}
+    section{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px}
+    h2{font-size:20px;margin:0 0 12px}
+    ul{margin:0;padding-left:20px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width: 720px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+    }
+    .small{color:var(--muted);font-size:14px}
+    footer{max-width:980px;margin:0 auto;padding:0 20px 40px;color:var(--muted)}
+    .badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#eff6ff;border:1px solid #dbeafe;font-size:12px}
+    code{background:#f1f5f9;border:1px solid #e2e8f0;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img class="photo" src="assets/profile.jpg" alt="프로필 사진 (assets/profile.jpg로 교체)" />
+      <div>
+        <h1>홍길동 (Mina Hong)</h1>
+        <p class="role">OO대학교 ○○연구실 · 석사과정</p>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#pubs">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        관심 분야는 <strong>딥러닝</strong>, <strong>컴퓨터비전</strong>, <strong>임베디드 AI</strong> 입니다.
+        현재 ○○연구실에서 △△ 주제로 연구 중입니다. 간단한 자기소개와 연구 관심사를 3~4문장으로 적어주세요.
+      </p>
+      <p class="small">이 페이지는 GitHub Pages로 배포됩니다. 저장소 이름은 <code>username.github.io</code> 형식입니다.</p>
+    </section>
+
+    <section id="research" class="grid">
+      <div>
+        <h2>Research</h2>
+        <ul>
+          <li>2025.08–현재: 프로젝트 A — 실시간 객체 감지 경량화</li>
+          <li>2024.12–2025.06: 프로젝트 B — 센서 융합 기반 자세 추정</li>
+        </ul>
+      </div>
+      <div>
+        <h2>News</h2>
+        <ul>
+          <li>[2025-09-20] ○○학회 포스터 발표</li>
+          <li>[2025-06-15] 학부 캡스톤 최우수상 수상</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pubs">
+      <h2>Publications & Preprints</h2>
+      <ul>
+        <li><strong>First Author</strong>, Coauthors, "Paper Title", <em>Conference/Journal</em>, 2025. <a href="#">PDF</a> · <a href="#">Code</a></li>
+        <li>Coauthor, "Another Paper", <em>Workshop</em>, 2024. <a href="#">PDF</a></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Smart Alarm Mat</strong> — 압력센서 기반 기상 보조 시스템. <a href="https://github.com/yourname/smart-alarm-mat" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><strong>Vision Tools</strong> — 간단한 데이터셋 뷰어/증강 도구. <a href="https://github.com/yourname/vision-tools" target="_blank" rel="noreferrer">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="grid">
+      <div>
+        <h2>Contact</h2>
+        <p>
+          📧 <a href="mailto:you@univ.ac.kr">you@univ.ac.kr</a><br/>
+          🌐 <a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a><br/>
+          🔗 <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
+        </p>
+      </div>
+      <div>
+        <h2>Links</h2>
+        <p>
+          <span class="badge">연구실: <a href="https://lab.example.ac.kr" target="_blank" rel="noreferrer">OO Lab</a></span>
+          &nbsp;
+          <span class="badge">학교: <a href="https://www.example.ac.kr" target="_blank" rel="noreferrer">OO Univ.</a></span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="small">© <span id="year"></span> 홍길동. Last updated: <span id="updated"></span></p>
+  </footer>
+
+  <script>
+    const d = new Date();
+    document.getElementById('year').textContent = d.getFullYear();
+    document.getElementById('updated').textContent = d.toISOString().slice(0,10);
+  </script>
+</body>
+</html>
